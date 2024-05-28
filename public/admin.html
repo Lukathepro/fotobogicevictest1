@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo/icon.png" type="image/png">
+</head>
+<body>
+<h1>Admin stranica</h1>
+<a id="orders-link" href="/admin_orders.html" target="_blank">Narudžbine</a>
+<div class="admin-section">
+    <h2>Kategorije</h2>
+    <form id="categoryForm">
+        <label for="category">Ime kategorije:</label>
+        <input type="text" id="category" name="category" required>
+        <button type="submit">Dodaj kategoriju</button>
+    </form>
+</div>
+<div class="admin-section">
+    <h2>Slike</h2>
+    <form id="imageUploadForm" enctype="multipart/form-data">
+        <label for="categorySelect">Odaberi kategoriju:</label>
+        <select id="categorySelect" name="category" required></select>
+        <label for="images">Izaberi slike:</label>
+        <input type="file" id="images" name="images" accept="image/*" multiple required>
+        <button type="button" id="previewImagesButton">Pogledaj slike</button>
+        <div id="imagePreviewContainer"></div>
+        <button type="submit" id="uploadImagesButton" style="display:none;">Uploaduj slike</button>
+    </form>
+</div>
+<div class="admin-section">
+    <h2>Upravljaj kategorijama</h2>
+    <div id="categoryList"></div>
+</div>
+<script src="scripts/admin.js"></script>
+</body>
+</html>

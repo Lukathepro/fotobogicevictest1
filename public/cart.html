@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korpa</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="logo/icon.png" type="image/png">
+</head>
+<body>
+<div id="preloader">
+    <img src="logo/icon.png" alt="Logo" id="preloader-logo">
+</div>
+<header>
+    <img src="logo/logo.png" alt="Foto Bogićević Logo" class="logo">
+    <div class="about-link">
+        <a href="onama.html" class="about-nav-link">O nama</a>
+    </div>
+    <nav>
+        <a href="index.html" class="nav-link">Početna</a>
+    </nav>
+</header>
+
+<div id="cart-container">
+    <div id="cart"></div>
+
+    <div>
+        <h2>Informacije</h2>
+        <form id="orderForm">
+            <label for="imeiprezime">Ime i prezime:</label>
+            <input type="text" id="imeiprezime" name="imeiprezime" required>
+            <label for="brojtelefona">Broj telefona:</label>
+            <input type="tel" id="brojtelefona" name="brojtelefona" required  pattern="{11}">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Završi porudžbinu</button>
+        </form>
+
+        <div id="orderStatus"></div>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Lokacija</h3>
+            <p>Ljubić Kej, Čačak 32000</p>
+
+        </div>
+        <div class="footer-section">
+            <h3>Kontakt</h3>
+            <p>E-mail: fotostudiobogicevic@gmail.com<br>Telefon: 066 350 355</p>
+        </div>
+        <div class="footer-section">
+            <h3>Pratite nas</h3>
+            <div class="social-icons">
+                <a href="#"><img src="logo/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="logo/email.png" alt="E-mail"></a>
+                <a href="#"><img src="logo/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2024 Foto Studio Bogićević. Sva prava zadržana.</p>
+    </div>
+</footer>
+
+<script src="scripts/cart.js"></script>
+</body>
+</html>
